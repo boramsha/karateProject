@@ -1,0 +1,75 @@
+15:27:33.263 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:33.273 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:34.301 response time in milliseconds: 1027.65
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:33 GMT
+1 < Etag: W/"ea88ce3bbf17551ad206cd750d1bdf55"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 1b79a52a-4662-423f-86cd-296356cde27b
+1 < X-Runtime: 0.013750
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ","token_type":"Bearer","expires_in":7200,"refresh_token":"rkPEnGX4N_GjvdoZuuBXFOTulkK-tuHNd2Dwu1jQVgM","created_at":1654768653}
+
+15:27:34.302 [print] {
+  "access_token": "kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ",
+  "refresh_token": "rkPEnGX4N_GjvdoZuuBXFOTulkK-tuHNd2Dwu1jQVgM",
+  "created_at": 1654768653,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:34.303 [print] kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ
+15:27:34.305 request:
+1 > DELETE https://demo.spreecommerce.org/api/v2/storefront/cart
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+1 > X-Spree-Order-Token: XI87zaszhndtURB0RjPkwg1652450630746
+
+15:27:35.528 response time in milliseconds: 1222.15
+1 < 204
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Thu, 09 Jun 2022 09:57:34 GMT
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: d17d191d-f7dc-444c-b289-c0d0fd3798ce
+1 < X-Runtime: 0.050472
+1 < X-Xss-Protection: 1; mode=block
+
+15:27:35.533 [print] cart deleted 

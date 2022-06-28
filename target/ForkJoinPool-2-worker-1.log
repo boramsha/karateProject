@@ -1,0 +1,44 @@
+15:27:16.192 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:16.202 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:17.239 response time in milliseconds: 1035.20
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:16 GMT
+1 < Etag: W/"49c0aaed28a5d6e3086d4bbc625c3fb2"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 78b3e5c9-02bb-4586-88e4-f534206715de
+1 < X-Runtime: 0.013778
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"hxUJ2rFynLgr_kJ8ktI0OG8gYzm7Pyti8uZwvr2--GY","token_type":"Bearer","expires_in":7200,"refresh_token":"X9zon_tbWmBIdrRANYcai1s-6N0FyD4rIcG2uJioEoI","created_at":1654768636}
+
+15:27:17.241 [print] {
+  "access_token": "hxUJ2rFynLgr_kJ8ktI0OG8gYzm7Pyti8uZwvr2--GY",
+  "refresh_token": "X9zon_tbWmBIdrRANYcai1s-6N0FyD4rIcG2uJioEoI",
+  "created_at": 1654768636,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:17.254 [print] hxUJ2rFynLgr_kJ8ktI0OG8gYzm7Pyti8uZwvr2--GY

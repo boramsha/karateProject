@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>features.POST_CreateAccount</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-06-09 03:27:15 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] create account </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/POST_CreateAccount.feature</span><span class="feature-description">Account creation</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">Before</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">create account </span>
+</div>
+<div class="scenario-time passed">ms: 2013</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">15:27:13.268 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'aaplication/json'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path '/api/v2/storefront/account'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And def requestbody = read('POST_CreateAccount.json')</div>
+</div>
+<div class="time-cell passed">74</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1934</div>
+</div>
+<div class="preformatted" data-parent="6">15:27:13.832 request:
+1 &gt; POST https://demo.spreecommerce.org/api/v2/storefront/account
+1 &gt; Accept: aaplication/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 228
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"user":{"email":"mayuri65@spree.com","first_name":"mayuri","last_name":"B","password":"mayuri65","password_confirmation":"mayuri65","public_metadata":{"user_segment":"supplier"},"private_metadata":{"has_abandoned_cart":false}}}
+
+15:27:15.288 response time in milliseconds: 1451.06
+1 &lt; 200
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.api+json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:14 GMT
+1 &lt; Etag: W/"ce8e770a3f4d3ad60c1b9b52af0c6e34"
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 52024628-1ed7-4e12-a4fd-fcf028226a85
+1 &lt; X-Runtime: 0.022302
+1 &lt; X-Xss-Protection: 1; mode=block
+{"data":{"id":"4846","type":"user","attributes":{"email":"mayuri65@spree.com","store_credits":0,"completed_orders":0},"relationships":{"default_billing_address":{"data":null},"default_shipping_address":{"data":null}}}}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="8">15:27:15.290 [print] {
+  "data": {
+    "relationships": {
+      "default_billing_address": {
+        "data": null
+      },
+      "default_shipping_address": {
+        "data": null
+      }
+    },
+    "attributes": {
+      "store_credits": 0,
+      "completed_orders": 0,
+      "email": "mayuri65@spree.com"
+    },
+    "id": "4846",
+    "type": "user"
+  }
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+15:27:19.962 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:19.976 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:21.024 response time in milliseconds: 1048.17
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:20 GMT
+1 < Etag: W/"042729882dd3e00f3d181e7cdd9becdd"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 46a2d907-6765-47df-863b-86505f55942b
+1 < X-Runtime: 0.014457
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"CtmprH222qyuX0mTwbuVMBPZvFSxH6xSCt6vtLyYiM4","token_type":"Bearer","expires_in":7200,"refresh_token":"8H-8Wqhh5Zkg3IIaTQA-A8H6zd5ighzKButAN8rqt8o","created_at":1654768640}
+
+15:27:21.025 [print] {
+  "access_token": "CtmprH222qyuX0mTwbuVMBPZvFSxH6xSCt6vtLyYiM4",
+  "refresh_token": "8H-8Wqhh5Zkg3IIaTQA-A8H6zd5ighzKButAN8rqt8o",
+  "created_at": 1654768640,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:21.026 [print] CtmprH222qyuX0mTwbuVMBPZvFSxH6xSCt6vtLyYiM4
+15:27:21.028 request:
+1 > GET https://demo.spreecommerce.org/api/v2/storefront/account
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer CtmprH222qyuX0mTwbuVMBPZvFSxH6xSCt6vtLyYiM4
+1 > Connection: Keep-Alive
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:22.064 response time in milliseconds: 1035.53
+1 < 200
+1 < Cache-Control: must-revalidate, private, max-age=0
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:21 GMT
+1 < Etag: W/"7d292260f4ce86d22a3859d281db95a9"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: miss
+1 < X-Request-Id: 664bf8d3-e45a-4b55-9c47-9cd4323c9ec2
+1 < X-Runtime: 0.021890
+1 < X-Xss-Protection: 1; mode=block
+{"data":{"id":"4846","type":"user","attributes":{"email":"mayuri65@spree.com","store_credits":0,"completed_orders":0},"relationships":{"default_billing_address":{"data":{"id":"36480","type":"address"}},"default_shipping_address":{"data":{"id":"36480","type":"address"}}}}}
+
+15:27:22.065 [print] {
+  "data": {
+    "relationships": {
+      "default_billing_address": {
+        "data": {
+          "id": "36480",
+          "type": "address"
+        }
+      },
+      "default_shipping_address": {
+        "data": {
+          "id": "36480",
+          "type": "address"
+        }
+      }
+    },
+    "attributes": {
+      "store_credits": 0,
+      "completed_orders": 0,
+      "email": "mayuri65@spree.com"
+    },
+    "id": "4846",
+    "type": "user"
+  }
+}
+
+15:27:22.065 [print] {
+  "data": {
+    "relationships": {
+      "default_billing_address": {
+        "data": {
+          "id": "36480",
+          "type": "address"
+        }
+      },
+      "default_shipping_address": {
+        "data": {
+          "id": "36480",
+          "type": "address"
+        }
+      }
+    },
+    "attributes": {
+      "store_credits": 0,
+      "completed_orders": 0,
+      "email": "mayuri65@spree.com"
+    },
+    "id": "4846",
+    "type": "user"
+  }
+}
+

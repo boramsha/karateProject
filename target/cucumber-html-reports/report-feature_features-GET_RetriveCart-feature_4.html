@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/GET_RetriveCart.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SpreeCommerce</td>
+            <td>09 Jun 2022, 15:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/GET_RetriveCart.feature</td>
+                    <td      class="passed"    >23</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">23</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3370309800">3s 370ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/GET_RetriveCart.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">cart retrival</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo.spreecommerce.org'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:27:30.677 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3s 370ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">cart retrival</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def AccessFeatureFile = call read('AccessToken.feature')</span>
+  
+  <span class="lead-duration duration">1s 056ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/AccessToken.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://demo.spreecommerce.org'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/spree_oauth/token'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def requestbody = read('AccessToken.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request requestbody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">1s 048ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:27:30.685 request:
+1 &gt; POST https://demo.spreecommerce.org/spree_oauth/token
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 79
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{&quot;grant_type&quot;:&quot;password&quot;,&quot;username&quot;:&quot;mayuri65@spree.com&quot;,&quot;password&quot;:&quot;mayuri65&quot;}
+
+15:27:31.731 response time in milliseconds: 1046.30
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:30 GMT
+1 &lt; Etag: W/&quot;da0ca8e0e7591c6db377be2729dbd692&quot;
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 5844760d-7ce8-449d-ae35-aaf0c8ff7dfb
+1 &lt; X-Runtime: 0.014985
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;access_token&quot;:&quot;uvjI3gmfp0RriMe7d4lMS0-yxezfmU1r-IxsXd4xkOI&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:7200,&quot;refresh_token&quot;:&quot;A-ZZWdbLNUk9f70p-JbIA9nCagF6AQeY7awrChW5ytQ&quot;,&quot;created_at&quot;:1654768650}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:27:31.733 [print] {
+  &quot;access_token&quot;: &quot;uvjI3gmfp0RriMe7d4lMS0-yxezfmU1r-IxsXd4xkOI&quot;,
+  &quot;refresh_token&quot;: &quot;A-ZZWdbLNUk9f70p-JbIA9nCagF6AQeY7awrChW5ytQ&quot;,
+  &quot;created_at&quot;: 1654768650,
+  &quot;token_type&quot;: &quot;Bearer&quot;,
+  &quot;expires_in&quot;: 7200
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def AccessToken = response.access_token</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print AccessToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>15:27:31.733 [print] uvjI3gmfp0RriMe7d4lMS0-yxezfmU1r-IxsXd4xkOI</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def AccessToken = AccessFeatureFile.AccessToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Authorization = 'Bearer '+ AccessToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header X-Spree-Order-Token = 'XI87zaszhndtURB0RjPkwg1652450630746'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">path '/api/v2/storefront/cart'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 259ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:27:31.735 request:
+1 &gt; GET https://demo.spreecommerce.org/api/v2/storefront/cart
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer uvjI3gmfp0RriMe7d4lMS0-yxezfmU1r-IxsXd4xkOI
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+1 &gt; X-Spree-Order-Token: XI87zaszhndtURB0RjPkwg1652450630746
+
+15:27:32.994 response time in milliseconds: 1256.73
+1 &lt; 200
+1 &lt; Cache-Control: must-revalidate, private, max-age=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.api+json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:32 GMT
+1 &lt; Etag: W/&quot;553093fb22db8a96b8b01c0f7865ba12&quot;
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: miss
+1 &lt; X-Request-Id: 37104b26-ae17-45fb-be99-a452597f2704
+1 &lt; X-Runtime: 0.028676
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;data&quot;:{&quot;id&quot;:&quot;31084&quot;,&quot;type&quot;:&quot;cart&quot;,&quot;attributes&quot;:{&quot;number&quot;:&quot;R762869196&quot;,&quot;item_total&quot;:&quot;134.95&quot;,&quot;total&quot;:&quot;134.95&quot;,&quot;ship_total&quot;:&quot;0.0&quot;,&quot;adjustment_total&quot;:&quot;0.0&quot;,&quot;created_at&quot;:&quot;2022-06-09T04:57:26.012-05:00&quot;,&quot;updated_at&quot;:&quot;2022-06-09T04:57:29.516-05:00&quot;,&quot;completed_at&quot;:null,&quot;included_tax_total&quot;:&quot;0.0&quot;,&quot;additional_tax_total&quot;:&quot;0.0&quot;,&quot;display_additional_tax_total&quot;:&quot;$0.00&quot;,&quot;display_included_tax_total&quot;:&quot;$0.00&quot;,&quot;tax_total&quot;:&quot;0.0&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;state&quot;:&quot;cart&quot;,&quot;token&quot;:&quot;v6JEwpYfwN8Vzwv2f8TRPg1654768646007&quot;,&quot;email&quot;:&quot;mayuri65@spree.com&quot;,&quot;display_item_total&quot;:&quot;$134.95&quot;,&quot;display_ship_total&quot;:&quot;$0.00&quot;,&quot;display_adjustment_total&quot;:&quot;$0.00&quot;,&quot;display_tax_total&quot;:&quot;$0.00&quot;,&quot;promo_total&quot;:&quot;0.0&quot;,&quot;display_promo_total&quot;:&quot;$0.00&quot;,&quot;item_count&quot;:5,&quot;special_instructions&quot;:null,&quot;display_total&quot;:&quot;$134.95&quot;,&quot;pre_tax_item_amount&quot;:&quot;134.95&quot;,&quot;display_pre_tax_item_amount&quot;:&quot;$134.95&quot;,&quot;pre_tax_total&quot;:&quot;134.95&quot;,&quot;display_pre_tax_total&quot;:&quot;$134.95&quot;,&quot;shipment_state&quot;:null,&quot;payment_state&quot;:null},&quot;relationships&quot;:{&quot;line_items&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;19702&quot;,&quot;type&quot;:&quot;line_item&quot;}]},&quot;variants&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;192&quot;,&quot;type&quot;:&quot;variant&quot;}]},&quot;promotions&quot;:{&quot;data&quot;:[]},&quot;payments&quot;:{&quot;data&quot;:[]},&quot;shipments&quot;:{&quot;data&quot;:[]},&quot;user&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;4846&quot;,&quot;type&quot;:&quot;user&quot;}},&quot;billing_address&quot;:{&quot;data&quot;:null},&quot;shipping_address&quot;:{&quot;data&quot;:null}}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:27:32.995 [print] {
+  &quot;data&quot;: {
+    &quot;relationships&quot;: {
+      &quot;promotions&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;payments&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;billing_address&quot;: {
+        &quot;data&quot;: null
+      },
+      &quot;line_items&quot;: {
+        &quot;data&quot;: [
+          {
+            &quot;id&quot;: &quot;19702&quot;,
+            &quot;type&quot;: &quot;line_item&quot;
+          }
+        ]
+      },
+      &quot;variants&quot;: {
+        &quot;data&quot;: [
+          {
+            &quot;id&quot;: &quot;192&quot;,
+            &quot;type&quot;: &quot;variant&quot;
+          }
+        ]
+      },
+      &quot;shipping_address&quot;: {
+        &quot;data&quot;: null
+      },
+      &quot;shipments&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;user&quot;: {
+        &quot;data&quot;: {
+          &quot;id&quot;: &quot;4846&quot;,
+          &quot;type&quot;: &quot;user&quot;
+        }
+      }
+    },
+    &quot;attributes&quot;: {
+      &quot;promo_total&quot;: &quot;0.0&quot;,
+      &quot;tax_total&quot;: &quot;0.0&quot;,
+      &quot;pre_tax_item_amount&quot;: &quot;134.95&quot;,
+      &quot;created_at&quot;: &quot;2022-06-09T04:57:26.012-05:00&quot;,
+      &quot;pre_tax_total&quot;: &quot;134.95&quot;,
+      &quot;additional_tax_total&quot;: &quot;0.0&quot;,
+      &quot;number&quot;: &quot;R762869196&quot;,
+      &quot;total&quot;: &quot;134.95&quot;,
+      &quot;ship_total&quot;: &quot;0.0&quot;,
+      &quot;display_ship_total&quot;: &quot;$0.00&quot;,
+      &quot;updated_at&quot;: &quot;2022-06-09T04:57:29.516-05:00&quot;,
+      &quot;included_tax_total&quot;: &quot;0.0&quot;,
+      &quot;display_total&quot;: &quot;$134.95&quot;,
+      &quot;display_item_total&quot;: &quot;$134.95&quot;,
+      &quot;display_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;display_promo_total&quot;: &quot;$0.00&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;state&quot;: &quot;cart&quot;,
+      &quot;display_pre_tax_total&quot;: &quot;$134.95&quot;,
+      &quot;adjustment_total&quot;: &quot;0.0&quot;,
+      &quot;email&quot;: &quot;mayuri65@spree.com&quot;,
+      &quot;display_additional_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;item_count&quot;: 5,
+      &quot;display_included_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;special_instructions&quot;: null,
+      &quot;display_pre_tax_item_amount&quot;: &quot;$134.95&quot;,
+      &quot;payment_state&quot;: null,
+      &quot;item_total&quot;: &quot;134.95&quot;,
+      &quot;shipment_state&quot;: null,
+      &quot;token&quot;: &quot;v6JEwpYfwN8Vzwv2f8TRPg1654768646007&quot;,
+      &quot;completed_at&quot;: null,
+      &quot;display_adjustment_total&quot;: &quot;$0.00&quot;
+    },
+    &quot;id&quot;: &quot;31084&quot;,
+    &quot;type&quot;: &quot;cart&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonobject = response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print jsonobject</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:27:32.996 [print] {
+  &quot;data&quot;: {
+    &quot;relationships&quot;: {
+      &quot;promotions&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;payments&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;billing_address&quot;: {
+        &quot;data&quot;: null
+      },
+      &quot;line_items&quot;: {
+        &quot;data&quot;: [
+          {
+            &quot;id&quot;: &quot;19702&quot;,
+            &quot;type&quot;: &quot;line_item&quot;
+          }
+        ]
+      },
+      &quot;variants&quot;: {
+        &quot;data&quot;: [
+          {
+            &quot;id&quot;: &quot;192&quot;,
+            &quot;type&quot;: &quot;variant&quot;
+          }
+        ]
+      },
+      &quot;shipping_address&quot;: {
+        &quot;data&quot;: null
+      },
+      &quot;shipments&quot;: {
+        &quot;data&quot;: [
+        ]
+      },
+      &quot;user&quot;: {
+        &quot;data&quot;: {
+          &quot;id&quot;: &quot;4846&quot;,
+          &quot;type&quot;: &quot;user&quot;
+        }
+      }
+    },
+    &quot;attributes&quot;: {
+      &quot;promo_total&quot;: &quot;0.0&quot;,
+      &quot;tax_total&quot;: &quot;0.0&quot;,
+      &quot;pre_tax_item_amount&quot;: &quot;134.95&quot;,
+      &quot;created_at&quot;: &quot;2022-06-09T04:57:26.012-05:00&quot;,
+      &quot;pre_tax_total&quot;: &quot;134.95&quot;,
+      &quot;additional_tax_total&quot;: &quot;0.0&quot;,
+      &quot;number&quot;: &quot;R762869196&quot;,
+      &quot;total&quot;: &quot;134.95&quot;,
+      &quot;ship_total&quot;: &quot;0.0&quot;,
+      &quot;display_ship_total&quot;: &quot;$0.00&quot;,
+      &quot;updated_at&quot;: &quot;2022-06-09T04:57:29.516-05:00&quot;,
+      &quot;included_tax_total&quot;: &quot;0.0&quot;,
+      &quot;display_total&quot;: &quot;$134.95&quot;,
+      &quot;display_item_total&quot;: &quot;$134.95&quot;,
+      &quot;display_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;display_promo_total&quot;: &quot;$0.00&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;state&quot;: &quot;cart&quot;,
+      &quot;display_pre_tax_total&quot;: &quot;$134.95&quot;,
+      &quot;adjustment_total&quot;: &quot;0.0&quot;,
+      &quot;email&quot;: &quot;mayuri65@spree.com&quot;,
+      &quot;display_additional_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;item_count&quot;: 5,
+      &quot;display_included_tax_total&quot;: &quot;$0.00&quot;,
+      &quot;special_instructions&quot;: null,
+      &quot;display_pre_tax_item_amount&quot;: &quot;$134.95&quot;,
+      &quot;payment_state&quot;: null,
+      &quot;item_total&quot;: &quot;134.95&quot;,
+      &quot;shipment_state&quot;: null,
+      &quot;token&quot;: &quot;v6JEwpYfwN8Vzwv2f8TRPg1654768646007&quot;,
+      &quot;completed_at&quot;: null,
+      &quot;display_adjustment_total&quot;: &quot;$0.00&quot;
+    },
+    &quot;id&quot;: &quot;31084&quot;,
+    &quot;type&quot;: &quot;cart&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

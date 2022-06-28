@@ -1,0 +1,14 @@
+<testsuite failures="0" name="features/AccessToken.feature" skipped="0" tests="1" time="1.060984">
+  <testcase classname="features.AccessToken" name="Creation of Auth Token" time="1.060984">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/spree_oauth/token' ........................................... passed
+And def requestbody = read('AccessToken.json') ............................ passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def AccessToken = response.access_token ................................. passed
+* print AccessToken ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

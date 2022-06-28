@@ -1,0 +1,15 @@
+<testsuite failures="0" name="features/GET_ListAllAddress.feature" skipped="0" tests="1" time="2.096646">
+  <testcase classname="features.GET_ListAllAddress" name="List all address" time="2.096646">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+When path '/api/v2/storefront/account/addresses' .......................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonobject = response ............................................... passed
+* print jsonobject ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

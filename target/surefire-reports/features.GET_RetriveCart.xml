@@ -1,0 +1,16 @@
+<testsuite failures="0" name="features/GET_RetriveCart.feature" skipped="0" tests="1" time="2.318035">
+  <testcase classname="features.GET_RetriveCart" name="cart retrival" time="2.318035">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+Given header X-Spree-Order-Token = 'XI87zaszhndtURB0RjPkwg1652450630746' .. passed
+When path '/api/v2/storefront/cart' ....................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonobject = response ............................................... passed
+* print jsonobject ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

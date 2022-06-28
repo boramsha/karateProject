@@ -1,0 +1,18 @@
+<testsuite failures="0" name="features/POST_CreateAddress.feature" skipped="0" tests="1" time="2.262809">
+  <testcase classname="features.POST_CreateAddress" name="Address Creation" time="2.262809">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'aaplication/json' ...................................... passed
+* header Content-Type = ' application/vnd.api+json' ....................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+Given path '/api/v2/storefront/account/addresses' ......................... passed
+And def requestbody = read('POST_CreateAddress.json') ..................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def AddressId = response.data.id ........................................ passed
+And print AddressId ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

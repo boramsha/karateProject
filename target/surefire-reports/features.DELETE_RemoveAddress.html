@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>features.DELETE_RemoveAddress</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-06-09 03:27:40 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] Address deleteion </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/DELETE_RemoveAddress.feature</span><span class="feature-description">Address deleteion</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Address deleteion </span>
+</div>
+<div class="scenario-time passed">ms: 4684</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="1">15:27:35.735 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* def AccessFeatureFile = call read('AccessToken.feature')</div>
+</div>
+<div class="time-cell passed">1085</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="4.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">features/AccessToken.feature</div>
+</div>
+<div class="time-cell passed">1080</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment"># creating token</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path '/spree_oauth/token'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def requestbody = read('AccessToken.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1077</div>
+</div>
+<div class="preformatted" data-parent="10">15:27:35.743 request:
+1 &gt; POST https://demo.spreecommerce.org/spree_oauth/token
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 79
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:36.819 response time in milliseconds: 1074.96
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:36 GMT
+1 &lt; Etag: W/"588180a3cc85058a776342de7b6f7df5"
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 593728b9-a199-4b42-b7f7-acc80c63be7b
+1 &lt; X-Runtime: 0.015376
+1 &lt; X-Xss-Protection: 1; mode=block
+{"access_token":"yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY","token_type":"Bearer","expires_in":7200,"refresh_token":"RhVxs7XvOpeVBVhsTbv8DnnlGHvD28IpHfZWi27FwXA","created_at":1654768656}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">15:27:36.820 [print] {
+  "access_token": "yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY",
+  "refresh_token": "RhVxs7XvOpeVBVhsTbv8DnnlGHvD28IpHfZWi27FwXA",
+  "created_at": 1654768656,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessToken = response.access_token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">15:27:36.821 [print] yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* def AccessToken = AccessFeatureFile.AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* def AccessAddressFile = call read('GET_ListAllAddress.feature')</div>
+</div>
+<div class="time-cell passed">2362</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">features/GET_ListAllAddress.feature</div>
+</div>
+<div class="time-cell passed">2352</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment"># passing token to retrive all address</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessFeatureFile = call read('AccessToken.feature')</div>
+</div>
+<div class="time-cell passed">1159</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">features/AccessToken.feature</div>
+</div>
+<div class="time-cell passed">1151</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment"># creating token</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path '/spree_oauth/token'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def requestbody = read('AccessToken.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1147</div>
+</div>
+<div class="preformatted" data-parent="25">15:27:36.846 request:
+1 &gt; POST https://demo.spreecommerce.org/spree_oauth/token
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 79
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:37.992 response time in milliseconds: 1144.17
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:37 GMT
+1 &lt; Etag: W/"e16e640f3910943e15aad4796bbb82e1"
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: da0e5a34-ff46-492f-9487-3bdc03675850
+1 &lt; X-Runtime: 0.013636
+1 &lt; X-Xss-Protection: 1; mode=block
+{"access_token":"OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U","token_type":"Bearer","expires_in":7200,"refresh_token":"nIoLMpbFQDjjdFAbqOUWYLmtYlFsaguyKKmv1_nZjhc","created_at":1654768657}</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="27">15:27:37.992 [print] {
+  "access_token": "OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U",
+  "refresh_token": "nIoLMpbFQDjjdFAbqOUWYLmtYlFsaguyKKmv1_nZjhc",
+  "created_at": 1654768657,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessToken = response.access_token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="29">15:27:37.993 [print] OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessToken = AccessFeatureFile.AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When path '/api/v2/storefront/account/addresses'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">1189</div>
+</div>
+<div class="preformatted" data-parent="33">15:27:37.995 request:
+1 &gt; GET https://demo.spreecommerce.org/api/v2/storefront/account/addresses
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:39.182 response time in milliseconds: 1184.54
+1 &lt; 200
+1 &lt; Cache-Control: must-revalidate, private, max-age=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.api+json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:38 GMT
+1 &lt; Etag: W/"912857702b57e3d4efe979e016312506"
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: miss
+1 &lt; X-Request-Id: d6ef3721-432d-454e-8608-1e71c2cc7b47
+1 &lt; X-Runtime: 0.024349
+1 &lt; X-Xss-Protection: 1; mode=block
+{"data":[{"id":"36480","type":"address","attributes":{"firstname":"mayuri","lastname":"gadgil","address1":"775 Old Georgetown Road","address2":"3rd Floor","city":"Qethesda","zipcode":"90210","phone":"3488545445003","state_name":"California","company":"Paper Street Soap Co.","country_name":"United States","country_iso3":"USA","country_iso":"US","label":"address65","state_code":"CA"}}],"meta":{"count":1,"total_count":1,"total_pages":1},"links":{"self":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses","next":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","prev":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","last":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","first":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"}}</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="35">15:27:39.183 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def jsonobject = response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print jsonobject</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="37">15:27:39.184 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">* def AddId = AccessAddressFile.response.data[0].id</div>
+</div>
+<div class="time-cell passed">23</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref passed">39</div>
+<div class="step-cell passed">* print AddId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="39">15:27:39.207 [print] 36480</div>
+<div class="step-row">
+<div class="step-container" id="40">
+<div class="step-ref passed">40</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="41">
+<div class="step-ref passed">41</div>
+<div class="step-cell passed">When path '/api/v2/storefront/account/addresses/' + AddId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="42">
+<div class="step-ref passed">42</div>
+<div class="step-cell passed">When method DELETE</div>
+</div>
+<div class="time-cell passed">1205</div>
+</div>
+<div class="preformatted" data-parent="42">15:27:39.211 request:
+1 &gt; DELETE https://demo.spreecommerce.org/api/v2/storefront/account/addresses/36480
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:40.414 response time in milliseconds: 1203.16
+1 &lt; 204
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Thu, 09 Jun 2022 09:57:39 GMT
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 7cf345aa-3e7f-4e95-974c-5e331493d467
+1 &lt; X-Runtime: 0.024875
+1 &lt; X-Xss-Protection: 1; mode=block</div>
+<div class="step-row">
+<div class="step-container" id="43">
+<div class="step-ref passed">43</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="44">
+<div class="step-ref passed">44</div>
+<div class="step-cell passed">* print "Address deleted "+ response</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="44">15:27:40.420 [print] Address deleted</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

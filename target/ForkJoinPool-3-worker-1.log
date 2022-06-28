@@ -1,0 +1,102 @@
+15:27:17.497 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:17.520 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:18.640 response time in milliseconds: 1119.59
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:17 GMT
+1 < Etag: W/"a8a8a337ce5b3649cda6b4d6b650e310"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: d8f31592-5617-4f62-a20e-a2bfef2f4dd4
+1 < X-Runtime: 0.028370
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"nqzQ3A8HE_3Whow82ionTEA3YXKXx6RCZB7AbAyqwr4","token_type":"Bearer","expires_in":7200,"refresh_token":"t_zvJng8QyqmVEVmoi-RPXl_dPboHZXtcC6pD_2G99g","created_at":1654768637}
+
+15:27:18.641 [print] {
+  "access_token": "nqzQ3A8HE_3Whow82ionTEA3YXKXx6RCZB7AbAyqwr4",
+  "refresh_token": "t_zvJng8QyqmVEVmoi-RPXl_dPboHZXtcC6pD_2G99g",
+  "created_at": 1654768637,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:18.642 [print] nqzQ3A8HE_3Whow82ionTEA3YXKXx6RCZB7AbAyqwr4
+15:27:18.660 request:
+1 > POST https://demo.spreecommerce.org/api/v2/storefront/account/addresses
+1 > Accept: aaplication/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer nqzQ3A8HE_3Whow82ionTEA3YXKXx6RCZB7AbAyqwr4
+1 > Connection: Keep-Alive
+1 > Content-Length: 265
+1 > Content-Type: application/vnd.api+json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"address":{"firstname":"mayuri","lastname":"gadgil","company":"Paper Street Soap Co.","address1":"775 Old Georgetown Road","address2":"3rd Floor","city":"Qethesda","phone":"3488545445003","zipcode":"90210","state_name":"CA","country_iso":"US","label":"address65"}}
+
+15:27:19.755 response time in milliseconds: 1093.64
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:18 GMT
+1 < Etag: W/"f962b8e1659b5d8f866d957cd9ad63f8"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: c9dd0ffe-385f-4550-a4c4-c80280df670b
+1 < X-Runtime: 0.050023
+1 < X-Xss-Protection: 1; mode=block
+{"data":{"id":"36480","type":"address","attributes":{"firstname":"mayuri","lastname":"gadgil","address1":"775 Old Georgetown Road","address2":"3rd Floor","city":"Qethesda","zipcode":"90210","phone":"3488545445003","state_name":"California","company":"Paper Street Soap Co.","country_name":"United States","country_iso3":"USA","country_iso":"US","label":"address65","state_code":"CA"}}}
+
+15:27:19.756 [print] {
+  "data": {
+    "attributes": {
+      "firstname": "mayuri",
+      "address2": "3rd Floor",
+      "city": "Qethesda",
+      "address1": "775 Old Georgetown Road",
+      "label": "address65",
+      "lastname": "gadgil",
+      "zipcode": "90210",
+      "phone": "3488545445003",
+      "state_name": "California",
+      "country_name": "United States",
+      "company": "Paper Street Soap Co.",
+      "state_code": "CA",
+      "country_iso3": "USA",
+      "country_iso": "US"
+    },
+    "id": "36480",
+    "type": "address"
+  }
+}
+
+15:27:19.762 [print] 36480

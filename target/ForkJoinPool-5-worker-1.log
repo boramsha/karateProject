@@ -1,0 +1,149 @@
+15:27:22.328 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:22.340 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:23.350 response time in milliseconds: 1008.22
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:22 GMT
+1 < Etag: W/"8d2ae1010737056a0db8cca1eab5f3c2"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: a8f16be9-5a03-4756-b0a1-bcc4efe5f957
+1 < X-Runtime: 0.013917
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"xaunToUK7YwPvkR2JoUTORJmutMUQ-j5Ka_a5fiCfY4","token_type":"Bearer","expires_in":7200,"refresh_token":"A5wfwMFQ6wJzzR45AY0RZw-Z95YIaNzpsu9NK1zYcm0","created_at":1654768642}
+
+15:27:23.351 [print] {
+  "access_token": "xaunToUK7YwPvkR2JoUTORJmutMUQ-j5Ka_a5fiCfY4",
+  "refresh_token": "A5wfwMFQ6wJzzR45AY0RZw-Z95YIaNzpsu9NK1zYcm0",
+  "created_at": 1654768642,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:23.352 [print] xaunToUK7YwPvkR2JoUTORJmutMUQ-j5Ka_a5fiCfY4
+15:27:23.354 request:
+1 > GET https://demo.spreecommerce.org/api/v2/storefront/account/addresses
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer xaunToUK7YwPvkR2JoUTORJmutMUQ-j5Ka_a5fiCfY4
+1 > Connection: Keep-Alive
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:24.424 response time in milliseconds: 1068.62
+1 < 200
+1 < Cache-Control: must-revalidate, private, max-age=0
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:23 GMT
+1 < Etag: W/"912857702b57e3d4efe979e016312506"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: miss
+1 < X-Request-Id: 88588cfc-672d-494d-9c89-fd9a9cac842e
+1 < X-Runtime: 0.033860
+1 < X-Xss-Protection: 1; mode=block
+{"data":[{"id":"36480","type":"address","attributes":{"firstname":"mayuri","lastname":"gadgil","address1":"775 Old Georgetown Road","address2":"3rd Floor","city":"Qethesda","zipcode":"90210","phone":"3488545445003","state_name":"California","company":"Paper Street Soap Co.","country_name":"United States","country_iso3":"USA","country_iso":"US","label":"address65","state_code":"CA"}}],"meta":{"count":1,"total_count":1,"total_pages":1},"links":{"self":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses","next":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","prev":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","last":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","first":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"}}
+
+15:27:24.425 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}
+
+15:27:24.427 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}
+

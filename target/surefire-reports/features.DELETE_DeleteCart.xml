@@ -1,0 +1,15 @@
+<testsuite failures="0" name="features/DELETE_DeleteCart.feature" skipped="0" tests="1" time="2.268884">
+  <testcase classname="features.DELETE_DeleteCart" name="Deletion of cart items" time="2.268884">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+* header Content-Type = 'application/json' ................................ passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+Given header X-Spree-Order-Token = 'XI87zaszhndtURB0RjPkwg1652450630746' .. passed
+When path '/api/v2/storefront/cart' ....................................... passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed
+* print "cart deleted "+ response ......................................... passed</system-out>
+  </testcase>
+</testsuite>

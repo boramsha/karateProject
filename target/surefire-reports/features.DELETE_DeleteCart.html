@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>features.DELETE_DeleteCart</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-06-09 03:27:35 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] Deletion of cart items </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/DELETE_DeleteCart.feature</span><span class="feature-description">Deletion of cart items</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Deletion of cart items </span>
+</div>
+<div class="scenario-time passed">ms: 2269</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="1">15:27:33.263 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* def AccessFeatureFile = call read('AccessToken.feature')</div>
+</div>
+<div class="time-cell passed">1039</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">features/AccessToken.feature</div>
+</div>
+<div class="time-cell passed">1035</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment"># creating token</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path '/spree_oauth/token'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def requestbody = read('AccessToken.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1030</div>
+</div>
+<div class="preformatted" data-parent="10">15:27:33.273 request:
+1 &gt; POST https://demo.spreecommerce.org/spree_oauth/token
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 79
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:34.301 response time in milliseconds: 1027.65
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:33 GMT
+1 &lt; Etag: W/"ea88ce3bbf17551ad206cd750d1bdf55"
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 1b79a52a-4662-423f-86cd-296356cde27b
+1 &lt; X-Runtime: 0.013750
+1 &lt; X-Xss-Protection: 1; mode=block
+{"access_token":"kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ","token_type":"Bearer","expires_in":7200,"refresh_token":"rkPEnGX4N_GjvdoZuuBXFOTulkK-tuHNd2Dwu1jQVgM","created_at":1654768653}</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">15:27:34.302 [print] {
+  "access_token": "kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ",
+  "refresh_token": "rkPEnGX4N_GjvdoZuuBXFOTulkK-tuHNd2Dwu1jQVgM",
+  "created_at": 1654768653,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessToken = response.access_token</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">15:27:34.303 [print] kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* def AccessToken = AccessFeatureFile.AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given header X-Spree-Order-Token = 'XI87zaszhndtURB0RjPkwg1652450630746'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">When path '/api/v2/storefront/cart'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method DELETE</div>
+</div>
+<div class="time-cell passed">1223</div>
+</div>
+<div class="preformatted" data-parent="19">15:27:34.305 request:
+1 &gt; DELETE https://demo.spreecommerce.org/api/v2/storefront/cart
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer kkiBmAidn3mLF_pmmWLDZ31mCh98ebiNPF77j62d2YQ
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+1 &gt; X-Spree-Order-Token: XI87zaszhndtURB0RjPkwg1652450630746
+
+15:27:35.528 response time in milliseconds: 1222.15
+1 &lt; 204
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Thu, 09 Jun 2022 09:57:34 GMT
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: d17d191d-f7dc-444c-b289-c0d0fd3798ce
+1 &lt; X-Runtime: 0.050472
+1 &lt; X-Xss-Protection: 1; mode=block</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">* print "cart deleted "+ response</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="21">15:27:35.533 [print] cart deleted</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

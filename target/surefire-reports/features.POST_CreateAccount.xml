@@ -1,0 +1,12 @@
+<testsuite failures="0" name="features/POST_CreateAccount.feature" skipped="0" tests="1" time="2.012997">
+  <testcase classname="features.POST_CreateAccount" name="create account" time="2.012997">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'aaplication/json' ...................................... passed
+Given path '/api/v2/storefront/account' ................................... passed
+And def requestbody = read('POST_CreateAccount.json') ..................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

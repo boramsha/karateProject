@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>features.POST_CreateCart</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-06-09 03:27:27 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] Create cart </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/POST_CreateCart.feature</span><span class="feature-description">Create cart</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Create cart </span>
+</div>
+<div class="scenario-time passed">ms: 3210</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="1">15:27:24.659 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'aaplication/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* header Content-Type = ' application/vnd.api+json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* def AccessFeatureFile = call read('AccessToken.feature')</div>
+</div>
+<div class="time-cell passed">1059</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">features/AccessToken.feature</div>
+</div>
+<div class="time-cell passed">1053</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* url 'https://demo.spreecommerce.org'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment"># creating token</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path '/spree_oauth/token'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def requestbody = read('AccessToken.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1048</div>
+</div>
+<div class="preformatted" data-parent="10">15:27:24.670 request:
+1 &gt; POST https://demo.spreecommerce.org/spree_oauth/token
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 79
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:25.716 response time in milliseconds: 1042.54
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:24 GMT
+1 &lt; Etag: W/"4087746641c1263fbbaba92282d6344b"
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: 0a25a811-648f-4a01-8032-a34d6d5e4c5a
+1 &lt; X-Runtime: 0.013793
+1 &lt; X-Xss-Protection: 1; mode=block
+{"access_token":"4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0","token_type":"Bearer","expires_in":7200,"refresh_token":"fOIpdZCotxhsyAzwcAcqcotInZ8qXccsoWhFZrzFz4c","created_at":1654768644}</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">15:27:25.717 [print] {
+  "access_token": "4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0",
+  "refresh_token": "fOIpdZCotxhsyAzwcAcqcotInZ8qXccsoWhFZrzFz4c",
+  "created_at": 1654768644,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def AccessToken = response.access_token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">15:27:25.718 [print] 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* def AccessToken = AccessFeatureFile.AccessToken</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ AccessToken</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given path '/api/v2/storefront/cart'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And def requestbody = read('POST_CreateCart.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request requestbody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1091</div>
+</div>
+<div class="preformatted" data-parent="20">15:27:25.726 request:
+1 &gt; POST https://demo.spreecommerce.org/api/v2/storefront/cart
+1 &gt; Accept: aaplication/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 89
+1 &gt; Content-Type: application/vnd.api+json; charset=UTF-8
+1 &gt; Host: demo.spreecommerce.org
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"public_metadata":{"total_weight":5000},"private_metadata":{"had_same_cart_items":true}}
+
+15:27:26.815 response time in milliseconds: 1088.53
+1 &lt; 201
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.api+json; charset=utf-8
+1 &lt; Date: Thu, 09 Jun 2022 09:57:26 GMT
+1 &lt; Etag: W/"41812871613b0681d44650248bb65094"
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: Cowboy
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Rack-Cache: invalidate, pass
+1 &lt; X-Request-Id: cf0d6cdf-3bea-4fe1-b378-82671cb6d85b
+1 &lt; X-Runtime: 0.045794
+1 &lt; X-Xss-Protection: 1; mode=block
+{"data":{"id":"31084","type":"cart","attributes":{"number":"R762869196","item_total":"0.0","total":"0.0","ship_total":"0.0","adjustment_total":"0.0","created_at":"2022-06-09T04:57:26.012-05:00","updated_at":"2022-06-09T04:57:26.012-05:00","completed_at":null,"included_tax_total":"0.0","additional_tax_total":"0.0","display_additional_tax_total":"$0.00","display_included_tax_total":"$0.00","tax_total":"0.0","currency":"USD","state":"cart","token":"v6JEwpYfwN8Vzwv2f8TRPg1654768646007","email":"mayuri65@spree.com","display_item_total":"$0.00","display_ship_total":"$0.00","display_adjustment_total":"$0.00","display_tax_total":"$0.00","promo_total":"0.0","display_promo_total":"$0.00","item_count":0,"special_instructions":null,"display_total":"$0.00","pre_tax_item_amount":"0.0","display_pre_tax_item_amount":"$0.00","pre_tax_total":"0.0","display_pre_tax_total":"$0.00","shipment_state":null,"payment_state":null},"relationships":{"line_items":{"data":[]},"variants":{"data":[]},"promotions":{"data":[]},"payments":{"data":[]},"shipments":{"data":[]},"user":{"data":{"id":"4846","type":"user"}},"billing_address":{"data":null},"shipping_address":{"data":null}}}}</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="22">15:27:26.816 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Given header Authorization = 'Bearer '+ AccessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">When path '/api/v2/storefront/cart'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">1053</div>
+</div>
+<div class="preformatted" data-parent="25">15:27:26.818 request:
+2 &gt; GET https://demo.spreecommerce.org/api/v2/storefront/cart
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: demo.spreecommerce.org
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:27.869 response time in milliseconds: 1049.99
+2 &lt; 200
+2 &lt; Cache-Control: must-revalidate, private, max-age=0
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/vnd.api+json; charset=utf-8
+2 &lt; Date: Thu, 09 Jun 2022 09:57:27 GMT
+2 &lt; Etag: W/"41812871613b0681d44650248bb65094"
+2 &lt; Referrer-Policy: strict-origin-when-cross-origin
+2 &lt; Server: Cowboy
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; Via: 1.1 vegur
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Download-Options: noopen
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Permitted-Cross-Domain-Policies: none
+2 &lt; X-Rack-Cache: miss
+2 &lt; X-Request-Id: 8d77aeb1-b9f8-464b-8aa4-a6a2ddda296e
+2 &lt; X-Runtime: 0.029256
+2 &lt; X-Xss-Protection: 1; mode=block
+{"data":{"id":"31084","type":"cart","attributes":{"number":"R762869196","item_total":"0.0","total":"0.0","ship_total":"0.0","adjustment_total":"0.0","created_at":"2022-06-09T04:57:26.012-05:00","updated_at":"2022-06-09T04:57:26.012-05:00","completed_at":null,"included_tax_total":"0.0","additional_tax_total":"0.0","display_additional_tax_total":"$0.00","display_included_tax_total":"$0.00","tax_total":"0.0","currency":"USD","state":"cart","token":"v6JEwpYfwN8Vzwv2f8TRPg1654768646007","email":"mayuri65@spree.com","display_item_total":"$0.00","display_ship_total":"$0.00","display_adjustment_total":"$0.00","display_tax_total":"$0.00","promo_total":"0.0","display_promo_total":"$0.00","item_count":0,"special_instructions":null,"display_total":"$0.00","pre_tax_item_amount":"0.0","display_pre_tax_item_amount":"$0.00","pre_tax_total":"0.0","display_pre_tax_total":"$0.00","shipment_state":null,"payment_state":null},"relationships":{"line_items":{"data":[]},"variants":{"data":[]},"promotions":{"data":[]},"payments":{"data":[]},"shipments":{"data":[]},"user":{"data":{"id":"4846","type":"user"}},"billing_address":{"data":null},"shipping_address":{"data":null}}}}</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="27">15:27:27.870 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">* def jsonobject = response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">* print jsonobject</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="29">15:27:27.870 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

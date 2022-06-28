@@ -1,0 +1,18 @@
+{
+  "user": {
+    "email": "mayuri65@spree.com",
+    "first_name": "mayuri",
+    "last_name": "B",
+    "password": "mayuri65",
+    "password_confirmation": "mayuri65",
+    "public_metadata": {
+      "user_segment": "supplier"
+    },
+    "private_metadata": {
+      "has_abandoned_cart": false
+    }
+    }
+  }
+  
+  
+  

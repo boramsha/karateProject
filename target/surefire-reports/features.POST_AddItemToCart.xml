@@ -1,0 +1,17 @@
+<testsuite failures="0" name="features/POST_AddItemToCart.feature" skipped="0" tests="1" time="2.354452">
+  <testcase classname="features.POST_AddItemToCart" name="Add item to cart" time="2.354452">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'aaplication/json' ...................................... passed
+* header Content-Type = ' application/vnd.api+json' ....................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+Given header X-Spree-Order-Token = 'XI87zaszhndtURB0RjPkwg1652450630746' .. passed
+Given path '/api/v2/storefront/cart/add_item' ............................. passed
+And def requestbody = read('POST_AddItemToCart.json') ..................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

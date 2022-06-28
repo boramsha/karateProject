@@ -1,0 +1,54 @@
+15:27:13.268 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:13.832 request:
+1 > POST https://demo.spreecommerce.org/api/v2/storefront/account
+1 > Accept: aaplication/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 228
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"user":{"email":"mayuri65@spree.com","first_name":"mayuri","last_name":"B","password":"mayuri65","password_confirmation":"mayuri65","public_metadata":{"user_segment":"supplier"},"private_metadata":{"has_abandoned_cart":false}}}
+
+15:27:15.288 response time in milliseconds: 1451.06
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:14 GMT
+1 < Etag: W/"ce8e770a3f4d3ad60c1b9b52af0c6e34"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 52024628-1ed7-4e12-a4fd-fcf028226a85
+1 < X-Runtime: 0.022302
+1 < X-Xss-Protection: 1; mode=block
+{"data":{"id":"4846","type":"user","attributes":{"email":"mayuri65@spree.com","store_credits":0,"completed_orders":0},"relationships":{"default_billing_address":{"data":null},"default_shipping_address":{"data":null}}}}
+
+15:27:15.290 [print] {
+  "data": {
+    "relationships": {
+      "default_billing_address": {
+        "data": null
+      },
+      "default_shipping_address": {
+        "data": null
+      }
+    },
+    "attributes": {
+      "store_credits": 0,
+      "completed_orders": 0,
+      "email": "mayuri65@spree.com"
+    },
+    "id": "4846",
+    "type": "user"
+  }
+}
+

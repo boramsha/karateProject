@@ -1,0 +1,223 @@
+15:27:35.735 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:35.743 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:36.819 response time in milliseconds: 1074.96
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:36 GMT
+1 < Etag: W/"588180a3cc85058a776342de7b6f7df5"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 593728b9-a199-4b42-b7f7-acc80c63be7b
+1 < X-Runtime: 0.015376
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY","token_type":"Bearer","expires_in":7200,"refresh_token":"RhVxs7XvOpeVBVhsTbv8DnnlGHvD28IpHfZWi27FwXA","created_at":1654768656}
+
+15:27:36.820 [print] {
+  "access_token": "yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY",
+  "refresh_token": "RhVxs7XvOpeVBVhsTbv8DnnlGHvD28IpHfZWi27FwXA",
+  "created_at": 1654768656,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:36.821 [print] yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY
+15:27:36.846 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:37.992 response time in milliseconds: 1144.17
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:37 GMT
+1 < Etag: W/"e16e640f3910943e15aad4796bbb82e1"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: da0e5a34-ff46-492f-9487-3bdc03675850
+1 < X-Runtime: 0.013636
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U","token_type":"Bearer","expires_in":7200,"refresh_token":"nIoLMpbFQDjjdFAbqOUWYLmtYlFsaguyKKmv1_nZjhc","created_at":1654768657}
+
+15:27:37.992 [print] {
+  "access_token": "OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U",
+  "refresh_token": "nIoLMpbFQDjjdFAbqOUWYLmtYlFsaguyKKmv1_nZjhc",
+  "created_at": 1654768657,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:37.993 [print] OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U
+15:27:37.995 request:
+1 > GET https://demo.spreecommerce.org/api/v2/storefront/account/addresses
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer OdUxNzJA7LZy2dbYMxBI5L3o9haafTW1lFKceAyZC2U
+1 > Connection: Keep-Alive
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:39.182 response time in milliseconds: 1184.54
+1 < 200
+1 < Cache-Control: must-revalidate, private, max-age=0
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:38 GMT
+1 < Etag: W/"912857702b57e3d4efe979e016312506"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: miss
+1 < X-Request-Id: d6ef3721-432d-454e-8608-1e71c2cc7b47
+1 < X-Runtime: 0.024349
+1 < X-Xss-Protection: 1; mode=block
+{"data":[{"id":"36480","type":"address","attributes":{"firstname":"mayuri","lastname":"gadgil","address1":"775 Old Georgetown Road","address2":"3rd Floor","city":"Qethesda","zipcode":"90210","phone":"3488545445003","state_name":"California","company":"Paper Street Soap Co.","country_name":"United States","country_iso3":"USA","country_iso":"US","label":"address65","state_code":"CA"}}],"meta":{"count":1,"total_count":1,"total_pages":1},"links":{"self":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses","next":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","prev":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","last":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1","first":"https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"}}
+
+15:27:39.183 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}
+
+15:27:39.184 [print] {
+  "data": [
+    {
+      "attributes": {
+        "firstname": "mayuri",
+        "address2": "3rd Floor",
+        "city": "Qethesda",
+        "address1": "775 Old Georgetown Road",
+        "label": "address65",
+        "lastname": "gadgil",
+        "zipcode": "90210",
+        "phone": "3488545445003",
+        "state_name": "California",
+        "country_name": "United States",
+        "company": "Paper Street Soap Co.",
+        "state_code": "CA",
+        "country_iso3": "USA",
+        "country_iso": "US"
+      },
+      "id": "36480",
+      "type": "address"
+    }
+  ],
+  "meta": {
+    "total_count": 1,
+    "count": 1,
+    "total_pages": 1
+  },
+  "links": {
+    "next": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "last": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "prev": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1",
+    "self": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses",
+    "first": "https://demo.spreecommerce.org/api/v2/storefront/account/addresses?page=1"
+  }
+}
+
+15:27:39.207 [print] 36480
+15:27:39.211 request:
+1 > DELETE https://demo.spreecommerce.org/api/v2/storefront/account/addresses/36480
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer yS5dXAxqfv6CcQVHKIPu6STGOKNI6n_QLcT38cyQDmY
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:40.414 response time in milliseconds: 1203.16
+1 < 204
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Thu, 09 Jun 2022 09:57:39 GMT
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 7cf345aa-3e7f-4e95-974c-5e331493d467
+1 < X-Runtime: 0.024875
+1 < X-Xss-Protection: 1; mode=block
+
+15:27:40.420 [print] Address deleted 

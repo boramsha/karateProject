@@ -1,0 +1,23 @@
+<testsuite failures="0" name="features/POST_CreateCart.feature" skipped="0" tests="1" time="3.210063">
+  <testcase classname="features.POST_CreateCart" name="Create cart" time="3.210063">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'aaplication/json' ...................................... passed
+* header Content-Type = ' application/vnd.api+json' ....................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+Given path '/api/v2/storefront/cart' ...................................... passed
+And def requestbody = read('POST_CreateCart.json') ........................ passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+When path '/api/v2/storefront/cart' ....................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonobject = response ............................................... passed
+* print jsonobject ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

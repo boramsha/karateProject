@@ -1,0 +1,333 @@
+15:27:24.659 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:27:24.670 request:
+1 > POST https://demo.spreecommerce.org/spree_oauth/token
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"grant_type":"password","username":"mayuri65@spree.com","password":"mayuri65"}
+
+15:27:25.716 response time in milliseconds: 1042.54
+1 < 200
+1 < Cache-Control: no-store
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:24 GMT
+1 < Etag: W/"4087746641c1263fbbaba92282d6344b"
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: 0a25a811-648f-4a01-8032-a34d6d5e4c5a
+1 < X-Runtime: 0.013793
+1 < X-Xss-Protection: 1; mode=block
+{"access_token":"4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0","token_type":"Bearer","expires_in":7200,"refresh_token":"fOIpdZCotxhsyAzwcAcqcotInZ8qXccsoWhFZrzFz4c","created_at":1654768644}
+
+15:27:25.717 [print] {
+  "access_token": "4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0",
+  "refresh_token": "fOIpdZCotxhsyAzwcAcqcotInZ8qXccsoWhFZrzFz4c",
+  "created_at": 1654768644,
+  "token_type": "Bearer",
+  "expires_in": 7200
+}
+
+15:27:25.718 [print] 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0
+15:27:25.726 request:
+1 > POST https://demo.spreecommerce.org/api/v2/storefront/cart
+1 > Accept: aaplication/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0
+1 > Connection: Keep-Alive
+1 > Content-Length: 89
+1 > Content-Type: application/vnd.api+json; charset=UTF-8
+1 > Host: demo.spreecommerce.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"public_metadata":{"total_weight":5000},"private_metadata":{"had_same_cart_items":true}}
+
+15:27:26.815 response time in milliseconds: 1088.53
+1 < 201
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.api+json; charset=utf-8
+1 < Date: Thu, 09 Jun 2022 09:57:26 GMT
+1 < Etag: W/"41812871613b0681d44650248bb65094"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: Cowboy
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rack-Cache: invalidate, pass
+1 < X-Request-Id: cf0d6cdf-3bea-4fe1-b378-82671cb6d85b
+1 < X-Runtime: 0.045794
+1 < X-Xss-Protection: 1; mode=block
+{"data":{"id":"31084","type":"cart","attributes":{"number":"R762869196","item_total":"0.0","total":"0.0","ship_total":"0.0","adjustment_total":"0.0","created_at":"2022-06-09T04:57:26.012-05:00","updated_at":"2022-06-09T04:57:26.012-05:00","completed_at":null,"included_tax_total":"0.0","additional_tax_total":"0.0","display_additional_tax_total":"$0.00","display_included_tax_total":"$0.00","tax_total":"0.0","currency":"USD","state":"cart","token":"v6JEwpYfwN8Vzwv2f8TRPg1654768646007","email":"mayuri65@spree.com","display_item_total":"$0.00","display_ship_total":"$0.00","display_adjustment_total":"$0.00","display_tax_total":"$0.00","promo_total":"0.0","display_promo_total":"$0.00","item_count":0,"special_instructions":null,"display_total":"$0.00","pre_tax_item_amount":"0.0","display_pre_tax_item_amount":"$0.00","pre_tax_total":"0.0","display_pre_tax_total":"$0.00","shipment_state":null,"payment_state":null},"relationships":{"line_items":{"data":[]},"variants":{"data":[]},"promotions":{"data":[]},"payments":{"data":[]},"shipments":{"data":[]},"user":{"data":{"id":"4846","type":"user"}},"billing_address":{"data":null},"shipping_address":{"data":null}}}}
+
+15:27:26.816 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}
+
+15:27:26.818 request:
+2 > GET https://demo.spreecommerce.org/api/v2/storefront/cart
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 4XpOVC7qdJnjdZ_BO8i3bJqu8qzZkV109vCeNcUEiR0
+2 > Connection: Keep-Alive
+2 > Host: demo.spreecommerce.org
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+15:27:27.869 response time in milliseconds: 1049.99
+2 < 200
+2 < Cache-Control: must-revalidate, private, max-age=0
+2 < Connection: keep-alive
+2 < Content-Type: application/vnd.api+json; charset=utf-8
+2 < Date: Thu, 09 Jun 2022 09:57:27 GMT
+2 < Etag: W/"41812871613b0681d44650248bb65094"
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Server: Cowboy
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-Rack-Cache: miss
+2 < X-Request-Id: 8d77aeb1-b9f8-464b-8aa4-a6a2ddda296e
+2 < X-Runtime: 0.029256
+2 < X-Xss-Protection: 1; mode=block
+{"data":{"id":"31084","type":"cart","attributes":{"number":"R762869196","item_total":"0.0","total":"0.0","ship_total":"0.0","adjustment_total":"0.0","created_at":"2022-06-09T04:57:26.012-05:00","updated_at":"2022-06-09T04:57:26.012-05:00","completed_at":null,"included_tax_total":"0.0","additional_tax_total":"0.0","display_additional_tax_total":"$0.00","display_included_tax_total":"$0.00","tax_total":"0.0","currency":"USD","state":"cart","token":"v6JEwpYfwN8Vzwv2f8TRPg1654768646007","email":"mayuri65@spree.com","display_item_total":"$0.00","display_ship_total":"$0.00","display_adjustment_total":"$0.00","display_tax_total":"$0.00","promo_total":"0.0","display_promo_total":"$0.00","item_count":0,"special_instructions":null,"display_total":"$0.00","pre_tax_item_amount":"0.0","display_pre_tax_item_amount":"$0.00","pre_tax_total":"0.0","display_pre_tax_total":"$0.00","shipment_state":null,"payment_state":null},"relationships":{"line_items":{"data":[]},"variants":{"data":[]},"promotions":{"data":[]},"payments":{"data":[]},"shipments":{"data":[]},"user":{"data":{"id":"4846","type":"user"}},"billing_address":{"data":null},"shipping_address":{"data":null}}}}
+
+15:27:27.870 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}
+
+15:27:27.870 [print] {
+  "data": {
+    "relationships": {
+      "promotions": {
+        "data": [
+        ]
+      },
+      "payments": {
+        "data": [
+        ]
+      },
+      "billing_address": {
+        "data": null
+      },
+      "line_items": {
+        "data": [
+        ]
+      },
+      "variants": {
+        "data": [
+        ]
+      },
+      "shipping_address": {
+        "data": null
+      },
+      "shipments": {
+        "data": [
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "4846",
+          "type": "user"
+        }
+      }
+    },
+    "attributes": {
+      "promo_total": "0.0",
+      "tax_total": "0.0",
+      "pre_tax_item_amount": "0.0",
+      "created_at": "2022-06-09T04:57:26.012-05:00",
+      "pre_tax_total": "0.0",
+      "additional_tax_total": "0.0",
+      "number": "R762869196",
+      "total": "0.0",
+      "ship_total": "0.0",
+      "display_ship_total": "$0.00",
+      "updated_at": "2022-06-09T04:57:26.012-05:00",
+      "included_tax_total": "0.0",
+      "display_total": "$0.00",
+      "display_item_total": "$0.00",
+      "display_tax_total": "$0.00",
+      "display_promo_total": "$0.00",
+      "currency": "USD",
+      "state": "cart",
+      "display_pre_tax_total": "$0.00",
+      "adjustment_total": "0.0",
+      "email": "mayuri65@spree.com",
+      "display_additional_tax_total": "$0.00",
+      "item_count": 0,
+      "display_included_tax_total": "$0.00",
+      "special_instructions": null,
+      "display_pre_tax_item_amount": "$0.00",
+      "payment_state": null,
+      "item_total": "0.0",
+      "shipment_state": null,
+      "token": "v6JEwpYfwN8Vzwv2f8TRPg1654768646007",
+      "completed_at": null,
+      "display_adjustment_total": "$0.00"
+    },
+    "id": "31084",
+    "type": "cart"
+  }
+}
+

@@ -1,0 +1,17 @@
+<testsuite failures="0" name="features/DELETE_RemoveAddress.feature" skipped="0" tests="1" time="4.684157">
+  <testcase classname="features.DELETE_RemoveAddress" name="Address deleteion" time="4.684157">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+* header Content-Type = 'application/json' ................................ passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+* def AccessAddressFile = call read('GET_ListAllAddress.feature') ......... passed
+* def AddId = AccessAddressFile.response.data[0].id ....................... passed
+* print AddId ............................................................. passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+When path '/api/v2/storefront/account/addresses/' + AddId ................. passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed
+* print "Address deleted "+ response ...................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<testsuite failures="0" name="features/PATCH_UpdateAccount.feature" skipped="0" tests="1" time="2.70246">
+  <testcase classname="features.PATCH_UpdateAccount" name="Update Account" time="2.70246">
+    <system-out>* url 'https://demo.spreecommerce.org' .................................... passed
+* header Accept = 'application/json' ...................................... passed
+* header Content-Type = ' application/vnd.api+json' ....................... passed
+* def AccessFeatureFile = call read('AccessToken.feature') ................ passed
+* def AccessToken = AccessFeatureFile.AccessToken ......................... passed
+Given header Authorization = 'Bearer '+ AccessToken ....................... passed
+When path '/api/v2/storefront/account' .................................... passed
+And request ............................................................... passed
+When method PATCH ......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonobject = response ............................................... passed
+* print jsonobject ........................................................ passed</system-out>
+  </testcase>
+</testsuite>
